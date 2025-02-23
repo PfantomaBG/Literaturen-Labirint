@@ -418,7 +418,7 @@ const authorDisplayName = {
 
 // Функция за извличане на въпроси (примерен API)
 function getQuestionsForAuthor(authorName, callback) {
-  fetch("http://literaturen-labirint.free.nf/api/questions?author=" + encodeURIComponent(authorName))
+  fetch("https://literaturen-labirint-1.onrender.com/api/questions?author=" + encodeURIComponent(authorName))
     .then(r => r.json())
     .then(data => callback(data))
     .catch(err => console.error("Грешка при извличане на въпроси:", err));
