@@ -70,6 +70,17 @@ body {
 }
 
 .modal-content {
+  background-color: white;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 400px ;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-gate {
   background-image: url(images/login_gate.png);
   padding: 20px;
   min-width: 300px;
