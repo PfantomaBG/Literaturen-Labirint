@@ -854,7 +854,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   correctSound = new Audio('audio/correct.mp3');
   correctSound.volume = 0.5;
-  
+  F
   wrongSound = new Audio('audio/wrong.mp3');
   wrongSound.volume = 0.5;
   
@@ -867,50 +867,20 @@ document.addEventListener('DOMContentLoaded', () => {
     correctSound.volume = vol;
     wrongSound.volume = vol;
   });
-  
-  // Отваряне на НВО модала
-  document.getElementById('nvo-btn').addEventListener('click', () => {
-    const nvoModal = document.getElementById('nvo-modal');
-    nvoModal.classList.remove('hidden');
-    nvoModal.classList.add('visible');
-  });
-  
-  // Затваряне на НВО модала
-  document.getElementById('nvo-close-btn').addEventListener('click', () => {
-    const nvoModal = document.getElementById('nvo-modal');
-    nvoModal.classList.remove('visible');
-    nvoModal.classList.add('hidden');
-  });
-  
-  // Обработка за бутона "Вход" в НВО модала
-  document.getElementById('nvo-select-btn').addEventListener('click', () => {
-    const select = document.getElementById('nvo-year-select');
-    const selectedKey = select.value; // напр. "nvo2022"
-    console.log("Избраният ключ е:", selectedKey);
-    if (!selectedKey) {
-      alert("Моля, изберете година!");
-      return;
-    }
-    const nvoModal = document.getElementById('nvo-modal');
-    nvoModal.classList.remove('visible');
-    nvoModal.classList.add('hidden');
-    selectAuthor(selectedKey);
-  });
-  
-  // Обработка за бутона за музика (пауза/възпроизвеждане)
-  const musicToggleBtn = document.getElementById('music-toggle-btn');
-  if(musicToggleBtn){
-    musicToggleBtn.addEventListener('click', () => {
-      if (backgroundMusic.paused) {
-        backgroundMusic.play();
-        musicToggleBtn.textContent = "Пауза музика";
-      } else {
-        backgroundMusic.pause();
-        musicToggleBtn.textContent = "Възпроизведи музика";
-      }
-    });
-  }
-  
+
+   // Обработка за бутона за музика (пауза/възпроизвеждане)
+   const musicToggleBtn = document.getElementById('music-toggle-btn');
+   if(musicToggleBtn){
+     musicToggleBtn.addEventListener('click', () => {
+       if (backgroundMusic.paused) {
+         backgroundMusic.play();
+         musicToggleBtn.textContent = "Пауза музика";
+       } else {
+         backgroundMusic.pause();
+         musicToggleBtn.textContent = "Възпроизведи музика";
+       }
+     });
+   }
   // Логин
   const loginModal = document.getElementById('login-modal');
   document.getElementById('login-btn').addEventListener('click', () => {
