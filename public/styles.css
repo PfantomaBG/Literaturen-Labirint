@@ -424,3 +424,23 @@ body {
     max-width: 600px;
   }
 }
+/* Стил за бутона за музика */
+#music-toggle-btn {
+  margin-left: 10px; /* Отстояние спрямо другите бутони */
+}
+#music-controls {
+  display: flex;
+  align-items: flex-start;  /* Подравняване към горната част */
+  gap: 10px;                /* Разстояние между елементите */
+}
+
+/* Лейбълът "Сила на звука:" */
+#volume-label {
+  text-align: left;
+  margin-right: 10px;  /* Разстояние между лейбъла и плъзгача */
+}
+
+/* Плъзгачът – малко спускаме надолу */
+#volume-control {
+  margin-top: 5px;  /* Регулирайте стойността според нуждите */
+}

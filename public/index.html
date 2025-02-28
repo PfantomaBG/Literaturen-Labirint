@@ -40,7 +40,11 @@
         <div id="button-row">
           <button id="back-to-authors" class="nav-btn">Назад към авторите</button>
           <button id="next-level" class="nav-btn hidden">Следващо ниво</button>
-        </div>
+          <!-- Бутон за управление на фоновата музика -->
+          <button id="music-toggle-btn" class="btn">Пауза музика</button>
+        <label for="volume-control">Сила на звука:</label>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.2">
+      </div>
       </header>
       <!-- Контейнер за лабиринта (квадратен, респонсив) -->
       <div id="maze-container-active">
