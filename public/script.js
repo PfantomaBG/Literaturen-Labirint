@@ -858,29 +858,6 @@ document.addEventListener('DOMContentLoaded', () => {
   wrongSound = new Audio('audio/wrong.mp3');
   wrongSound.volume = 0.5;
   
-  // Слайдер за регулиране на звука
-  const volumeControl = document.getElementById('volume-control');
-  volumeControl.addEventListener('input', function() {
-    const vol = parseFloat(this.value);
-    backgroundMusic.volume = vol;
-    doorSound.volume = vol;
-    correctSound.volume = vol;
-    wrongSound.volume = vol;
-  });
-
-   // Обработка за бутона за музика (пауза/възпроизвеждане)
-   const musicToggleBtn = document.getElementById('music-toggle-btn');
-   if(musicToggleBtn){
-     musicToggleBtn.addEventListener('click', () => {
-       if (backgroundMusic.paused) {
-         backgroundMusic.play();
-         musicToggleBtn.textContent = "Пауза музика";
-       } else {
-         backgroundMusic.pause();
-         musicToggleBtn.textContent = "Възпроизведи музика";
-       }
-     });
-   }
   // Логин
   const loginModal = document.getElementById('login-modal');
   document.getElementById( 'username' ).addEventListener( 'keydown', function ( e )
