@@ -854,7 +854,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   correctSound = new Audio('audio/correct.mp3');
   correctSound.volume = 0.5;
-  F
+  
   wrongSound = new Audio('audio/wrong.mp3');
   wrongSound.volume = 0.5;
   
