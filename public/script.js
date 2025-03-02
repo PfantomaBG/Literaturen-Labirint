@@ -841,7 +841,7 @@ function getShortestPathDistance(maze, startPos) {
   return Infinity;
 }
 
-llet backgroundMusic, doorSound, correctSound, wrongSound;
+let backgroundMusic, doorSound, correctSound, wrongSound;
 
 document.addEventListener('DOMContentLoaded', () => {
   // Аудио инициализация
